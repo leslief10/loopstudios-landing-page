@@ -1,0 +1,31 @@
+:root {
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-grey-200: #d8d8d8;
+  --color-blue-100: #e5eaf1;
+  --color-blue-50: #f6faff;
+  --main-font: "Josefin Sans", system-ui, sans-serif;
+  --secondary-font: "Alata", system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  background-color: var(--color-white);
+  font-family: var(--main-font);
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
