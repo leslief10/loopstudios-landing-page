@@ -17,52 +17,57 @@
     <title>Loopstudios | Immersive experiences and VR solutions</title>
   </head>
   <body>
-    <header>
-      <div>
-        <img src="./assets/img/logo.svg" alt="" />
-        <button aria-label="Open navigation menu">
+    <header class="width header">
+      <div class="flex-row header__elements">
+        <img src="./assets/img/logo.svg" alt="" class="logo" />
+        <button aria-label="Open navigation menu" class="header__elements__btn">
           <img
             src="./assets/img/icon-hamburger.svg"
             alt="Open navigation menu"
           />
         </button>
-        <nav>
-          <div>
-            <img src="./assets/img/logo.svg" alt="" />
-            <button aria-label="Close navigation menu">
+        <nav class="header__elements__nav">
+          <div class="flex-row header__elements">
+            <img src="./assets/img/logo.svg" alt="" class="logo" />
+            <button
+              aria-label="Close navigation menu"
+              class="header__elements__btn"
+            >
               <img
                 src="./assets/img/icon-close.svg"
                 alt="Close navigation menu"
               />
             </button>
           </div>
-          <ul>
-            <li>
+          <ul class="flex-column header__nav-list">
+            <li class="main-font header__nav-item">
               <a href="#">About</a>
             </li>
-            <li>
+            <li class="main-font header__nav-item">
               <a href="#">Careers</a>
             </li>
-            <li>
+            <li class="main-font header__nav-item">
               <a href="#">Events</a>
             </li>
-            <li>
+            <li class="main-font header__nav-item">
               <a href="#">Products</a>
             </li>
-            <li>
+            <li class="main-font header__nav-item">
               <a href="#">Support</a>
             </li>
           </ul>
         </nav>
       </div>
-      <div>
-        <h1>Immersive experiences that deliver</h1>
+      <div class="header-text">
+        <h1 class="main-font header-text__title">
+          Immersive experiences that deliver
+        </h1>
       </div>
     </header>
 
-    <main>
-      <section>
-        <picture>
+    <main class="width flex-column main">
+      <section class="flex-column main__section">
+        <picture class="main__section__picture">
           <source
             media="(min-width: 768px)"
             srcset="./assets/img/desktop/image-interactive.webp"
@@ -70,11 +75,14 @@
           <img
             src="./assets/img/mobile/image-interactive.webp"
             alt="Person wearing a VR headset experiencing immersive virtual reality"
+            class="main__section__picture--img"
           />
         </picture>
-        <div>
-          <h2>The leader in interactive VR</h2>
-          <p>
+        <div class="flex-column main__section__text">
+          <h2 class="main-font main__section__text--title">
+            The leader in interactive VR
+          </h2>
+          <p class="secondary-font main__section__text--paragraph">
             Founded in 2011, Loopstudios has been producing world-class virtual
             reality projects for some of the best companies around the globe.
             Our award-winning creations have transformed businesses through
@@ -82,153 +90,201 @@
           </p>
         </div>
       </section>
-      <section>
-        <h2>OUR CREATIONS</h2>
-        <div>
-          <a href="#">
-            <picture>
-              <source
-                media="(min-width: 768px)"
-                srcset="./assets/img/desktop/image-deep-earth.webp"
-              />
-              <img
-                src="./assets/img/mobile/image-deep-earth.webp"
-                alt="Deep Earth VR experience showcasing planet Earth"
-              />
-            </picture>
-          </a>
-          <h3>Deep Earth</h3>
+      <section class="flex-column main__secondary-section">
+        <h2 class="main-font main__secondary-section__title">OUR CREATIONS</h2>
+        <div class="flex-column main__secondary-section__creations">
+          <div class="main__secondary-section__creations-item">
+            <a href="#">
+              <picture class="main__secondary-section__creations-item--picture">
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="./assets/img/desktop/image-deep-earth.webp"
+                />
+                <img
+                  src="./assets/img/mobile/image-deep-earth.webp"
+                  alt="Deep Earth VR experience showcasing planet Earth"
+                  class="main__secondary-section__creations-item--picture-img"
+                />
+              </picture>
+            </a>
+            <h3
+              class="main-font main__secondary-section__creations-item--title"
+            >
+              Deep Earth
+            </h3>
+          </div>
+          <div class="main__secondary-section__creations-item">
+            <a href="#">
+              <picture class="main__secondary-section__creations-item--picture">
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="./assets/img/desktop/image-night-arcade.webp"
+                />
+                <img
+                  src="./assets/img/mobile/image-night-arcade.webp"
+                  alt="Night Arcade VR experience with neon arcade games"
+                  class="main__secondary-section__creations-item--picture-img"
+                />
+              </picture>
+            </a>
+            <h3
+              class="main-font main__secondary-section__creations-item--title"
+            >
+              Night Arcade
+            </h3>
+          </div>
+          <div class="main__secondary-section__creations-item">
+            <a href="#">
+              <picture class="main__secondary-section__creations-item--picture">
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="./assets/img/desktop/image-soccer-team.webp"
+                />
+                <img
+                  src="./assets/img/mobile/image-soccer-team.webp"
+                  alt="Soccer Team VR experience with player in red jersey"
+                  class="main__secondary-section__creations-item--picture-img"
+                />
+              </picture>
+            </a>
+            <h3
+              class="main-font main__secondary-section__creations-item--title"
+            >
+              Soccer Team VR
+            </h3>
+          </div>
+          <div class="main__secondary-section__creations-item">
+            <a href="#">
+              <picture class="main__secondary-section__creations-item--picture">
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="./assets/img/desktop/image-grid.webp"
+                />
+                <img
+                  src="./assets/img/mobile/image-grid.webp"
+                  alt="The Grid VR experience featuring a sleek car design"
+                  class="main__secondary-section__creations-item--picture-img"
+                />
+              </picture>
+            </a>
+            <h3
+              class="main-font main__secondary-section__creations-item--title"
+            >
+              The Grid
+            </h3>
+          </div>
+          <div class="main__secondary-section__creations-item">
+            <a href="#">
+              <picture class="main__secondary-section__creations-item--picture">
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="./assets/img/desktop/image-from-above.webp"
+                />
+                <img
+                  src="./assets/img/mobile/image-from-above.webp"
+                  alt="From Up Above VR experience showcasing winding road from aerial view"
+                  class="main__secondary-section__creations-item--picture-img"
+                />
+              </picture>
+            </a>
+            <h3
+              class="main-font main__secondary-section__creations-item--title"
+            >
+              From Up Above VR
+            </h3>
+          </div>
+          <div class="main__secondary-section__creations-item">
+            <a href="#">
+              <picture class="main__secondary-section__creations-item--picture">
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="./assets/img/desktop/image-pocket-borealis.webp"
+                />
+                <img
+                  src="./assets/img/mobile/image-pocket-borealis.webp"
+                  alt="Pocket Borealis VR experience capturing Northern Lights Aurora"
+                  class="main__secondary-section__creations-item--picture-img"
+                />
+              </picture>
+            </a>
+            <h3
+              class="main-font main__secondary-section__creations-item--title"
+            >
+              Pocket Borealis
+            </h3>
+          </div>
+          <div class="main__secondary-section__creations-item">
+            <a href="#">
+              <picture class="main__secondary-section__creations-item--picture">
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="./assets/img/desktop/image-curiosity.webp"
+                />
+                <img
+                  src="./assets/img/mobile/image-curiosity.webp"
+                  alt="The Curiosity VR experience featuring Mars Rover exploration"
+                  class="main__secondary-section__creations-item--picture-img"
+                />
+              </picture>
+            </a>
+            <h3
+              class="main-font main__secondary-section__creations-item--title"
+            >
+              The Curiosity
+            </h3>
+          </div>
+          <div class="main__secondary-section__creations-item">
+            <a href="#">
+              <picture class="main__secondary-section__creations-item--picture">
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="./assets/img/desktop/image-fisheye.webp"
+                />
+                <img
+                  src="./assets/img/mobile/image-fisheye.webp"
+                  alt="Make it Fisheye VR experience with wide-angle fisheye perspective"
+                  class="main__secondary-section__creations-item--picture-img"
+                />
+              </picture>
+            </a>
+            <h3
+              class="main-font main__secondary-section__creations-item--title"
+            >
+              Make it Fisheye
+            </h3>
+          </div>
         </div>
-        <div>
-          <a href="#">
-            <picture>
-              <source
-                media="(min-width: 768px)"
-                srcset="./assets/img/desktop/image-night-arcade.webp"
-              />
-              <img
-                src="./assets/img/mobile/image-night-arcade.webp"
-                alt="Night Arcade VR experience with neon arcade games"
-              />
-            </picture>
-          </a>
-          <h3>Night Arcade</h3>
-        </div>
-        <div>
-          <a href="#">
-            <picture>
-              <source
-                media="(min-width: 768px)"
-                srcset="./assets/img/desktop/image-soccer-team.webp"
-              />
-              <img
-                src="./assets/img/mobile/image-soccer-team.webp"
-                alt="Soccer Team VR experience with player in red jersey"
-              />
-            </picture>
-          </a>
-          <h3>Soccer Team VR</h3>
-        </div>
-        <div>
-          <a href="#">
-            <picture>
-              <source
-                media="(min-width: 768px)"
-                srcset="./assets/img/desktop/image-grid.webp"
-              />
-              <img
-                src="./assets/img/mobile/image-grid.webp"
-                alt="The Grid VR experience featuring a sleek car design"
-              />
-            </picture>
-          </a>
-          <h3>The Grid</h3>
-        </div>
-        <div>
-          <a href="#">
-            <picture>
-              <source
-                media="(min-width: 768px)"
-                srcset="./assets/img/desktop/image-from-above.webp"
-              />
-              <img
-                src="./assets/img/mobile/image-from-above.webp"
-                alt="From Up Above VR experience showcasing winding road from aerial view"
-              />
-            </picture>
-          </a>
-          <h3>From Up Above</h3>
-        </div>
-        <div>
-          <a href="#">
-            <picture>
-              <source
-                media="(min-width: 768px)"
-                srcset="./assets/img/desktop/image-pocket-borealis.webp"
-              />
-              <img
-                src="./assets/img/mobile/image-pocket-borealis.webp"
-                alt="Pocket Borealis VR experience capturing Northern Lights Aurora"
-              />
-            </picture>
-          </a>
-          <h3>Pocket Borealis</h3>
-        </div>
-        <div>
-          <a href="#">
-            <picture>
-              <source
-                media="(min-width: 768px)"
-                srcset="./assets/img/desktop/image-curiosity.webp"
-              />
-              <img
-                src="./assets/img/mobile/image-curiosity.webp"
-                alt="The Curiosity VR experience featuring Mars Rover exploration"
-              />
-            </picture>
-          </a>
-          <h3>The Curiosity</h3>
-        </div>
-        <div>
-          <a href="#">
-            <picture>
-              <source
-                media="(min-width: 768px)"
-                srcset="./assets/img/desktop/image-fisheye.webp"
-              />
-              <img
-                src="./assets/img/mobile/image-fisheye.webp"
-                alt="Make it Fisheye VR experience with wide-angle fisheye perspective"
-              />
-            </picture>
-          </a>
-          <h3>Make it Fisheye</h3>
-        </div>
-        <button aria-label="See all VR creations">See all</button>
+        <button
+          aria-label="See all VR creations"
+          class="flex-column main-font main__secondary-section__btn"
+        >
+          See all
+        </button>
       </section>
     </main>
-    <footer>
-      <img src="./assets/img/logo.svg" alt="" />
-      <nav>
-        <ul>
-          <li>
+
+    <footer class="width flex-column footer">
+      <img src="./assets/img/logo.svg" alt="" class="logo footer__logo" />
+      <nav class="footer__nav">
+        <ul class="flex-column footer__nav-list">
+          <li class="secondary-font footer__nav-item">
             <a href="#">About</a>
           </li>
-          <li>
+          <li class="secondary-font footer__nav-item">
             <a href="#">Careers</a>
           </li>
-          <li>
+          <li class="secondary-font footer__nav-item">
             <a href="#">Events</a>
           </li>
-          <li>
+          <li class="secondary-font footer__nav-item">
             <a href="#">Products</a>
           </li>
-          <li>
+          <li class="secondary-font footer__nav-item">
             <a href="#">Support</a>
           </li>
         </ul>
       </nav>
-      <div>
+      <div class="flex-row footer__social">
         <a href="#" aria-label="Visit our Facebook page">
           <img src="./assets/img/icon-facebook.svg" alt="" />
         </a>
@@ -242,7 +298,9 @@
           <img src="./assets/img/icon-instagram.svg" alt="" />
         </a>
       </div>
-      <p>&copy;2021 Loopstudios. All rights reserved.</p>
+      <p class="secondary-font footer__copyright">
+        &copy;2021 Loopstudios. All rights reserved.
+      </p>
     </footer>
     <script type="module" src="./js/script.js"></script>
   </body>
