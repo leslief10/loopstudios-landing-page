@@ -87,5 +87,5 @@ Implementé **mobile-first** con tres breakpoints principales:
 
 ## Links
 
-- Deploy URL: [Loopstudios Landing Page](https://leslief10.github.io/)
-- Repo URL: [Loopstudios Landing Page](https://github.com/leslief10/)
+- Deploy URL: [Loopstudios Landing Page](https://leslief10.github.io/loopstudios-landing-page/)
+- Repo URL: [Loopstudios Landing Page](https://github.com/leslief10/loopstudios-landing-page)
